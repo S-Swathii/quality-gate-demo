@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Checkout Source') {
             steps {
-                git url: 'git@github.com:YOUR_GITHUB_USER/maven-app.git',
-                    credentialsId: 'github-ssh-key',
+                git url: 'https://github.com/S-Swathii/quality-gate-demo.git',
                     branch: 'main'
             }
         }
